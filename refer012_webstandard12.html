@@ -1,0 +1,149 @@
+<div class="info-output">
+
+    <h1>12. 웹 표준 사이트 만들기(2019) - 헤더 타이틀 & 웹 폰트</h1>
+    <p>사이트를 만들기 전에 레이아웃은 익히는 것은 가장 기본입니다. 앞으로 나오는 레이아웃 예제를 통해 레이아웃을 익히면 사이트 만들 때 도움이 됩니다.</p>
+
+    <div class="code-reference"> 
+        <h2>Code Reference</h2>
+        <p class="bubble warning">소스는 여기서 다운 받을 수 있습니다. <a class="color-values" target="_blank" href="https://github.com/webstoryboy/webstandard2019">바로가기</a></p>
+        <p class="bubble warning">완성된 예제는 여기서 확인 할 수 있습니다. <a class="color-values" target="_blank" href="https://webstoryboy.github.io/webstandard2019/sample178_12.html">바로가기</a></p>
+    </div>
+    
+    <div class="code-preview">
+    <h2>Code example - Html</h2>
+<pre class="xml"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="webstoryboy"&gt;
+    &lt;meta name="description" content="웹 표준을 준수한 사이트 예제입니다."&gt;
+    &lt;meta name="keywords" content="웹표준, 웹접근성, 샘플사이트"&gt;
+    &lt;meta name="generator" content="brackets"&gt;
+    &lt;title&gt;WEBSTANDARD SITE&lt;/title&gt;
+    
+    &lt;!-- style --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/reset12.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/style12.css"&gt;
+    
+    &lt;!-- 웹 폰트 --&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 스킵 내비게이션 --&gt;
+    &lt;div id="skip"&gt;
+        &lt;a rel="bookmark" href="#cont_nav"&gt;전체 메뉴 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_ban"&gt;배너 영역 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_cont"&gt;컨텐츠 영역 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //스킵 내비게이션 --&gt;
+    
+    &lt;div id="wrap"&gt;
+        &lt;div id="header" role="header"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="header"&gt;
+                    &lt;div class="header-menu"&gt;
+                        &lt;a href="https://wiss.tistory.com/"&gt;Desinger&lt;/a&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;Publisher&lt;/a&gt;
+                        &lt;a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw"&gt;Youtube&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 메뉴 --&gt;
+                    &lt;div class="header-tit"&gt;
+                        &lt;h1&gt;Professional Publisher &amp; Designer&lt;/h1&gt;&lt;br&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;webstoryboy.co.kr&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 타이틀 --&gt;
+                    &lt;div class="header-icon"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="cont_nav" role="nav"&gt;
+                &lt;div class="container"&gt;cont_nav&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_nav --&gt;
+            &lt;div id="cont_tit" role="title"&gt;
+                &lt;div class="container"&gt;cont_tit&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_tit --&gt;
+            &lt;div id="cont_ban" role="banner"&gt;
+                &lt;div class="container"&gt;cont_ban&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_ban --&gt;
+            &lt;div id="cont_cont" role="content"&gt;
+                &lt;div class="container"&gt;cont_cont&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_cont --&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer" role="footer"&gt;
+            &lt;div class="container"&gt;footer&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    <div class="code-preview">
+    <h2>Code example - reset.css</h2>
+<pre class="css"><code>@charset "utf-8";
+
+/* 여백 초기화 */   
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,
+legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #390;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; font-size: 13px; line-height: 1.5;}</code></pre>
+    </div>
+
+    <div class="code-preview">
+    <h2>Code example - style.css</h2>
+<pre class="css"><code>@charset "utf-8";
+
+/* 스킵 내비게이션 */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+#skip a:active, 
+#skip a:focus {top: 0;}
+
+/* 레이아웃 */
+#wrap {width: 100%; }
+#header {width: 100%; height: 325px; background: #111; }
+#contents {width: 100%; height: 800px; background: #222;}
+#footer {width: 100%; height: 200px; background: #111;}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {width: 100%; height: 200px; background: #333;}
+#cont_tit {width: 100%; height: 200px; background: #444;}
+#cont_ban {width: 100%; height: 200px; background: #555;}
+#cont_cont {width: 100%; height: 200px; background: #666;}
+
+/* 컨테이너 */
+.container {width: 990px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+
+/* 헤더 */
+.header {}
+.header .header-menu {text-align: right; }
+.header .header-menu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
+.header .header-menu a:hover {color: #666;}
+.header .header-tit {text-align: center; }
+.header .header-tit h1 {color: #fff; background-color: #4aa8d4; display: inline-block; font-size: 28px; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+.header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
+
+.header .header-icon {} 
+</code></pre>
+    </div>
+    <!-- //code-preview -->
+</div>
+<!-- //demo-info -->
