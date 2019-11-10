@@ -1,0 +1,68 @@
+<div class="info-output">
+
+    <h1>03. 반응형 웹 사이트 만들기(2019) - 반응형 레이아웃 유형1</h1>
+    <p>반응형 웹 사이트를 만들기 위한 레이아웃 연습입니다. HTML5 시멘트 태그를 사용하여 만듭니다. 반응형 사이트 역시 레이아웃을 연습해야 합니다.</p>
+
+    <div class="code-reference"> 
+        <h2>Code Reference</h2>
+        <p class="bubble warning">소스는 여기서 다운 받을 수 있습니다. <a class="color-values" target="_blank" href="https://github.com/webstoryboy/responsive2019">바로가기</a></p>
+        <p class="bubble warning">완성된 예제는 여기서 확인 할 수 있습니다. <a class="color-values" target="_blank" href="https://webstoryboy.github.io/responsive2019/res206_03.html">바로가기</a></p>
+    </div>
+    
+    <div class="code-preview">
+    <h2>Code example - Html</h2>
+<pre class="xml"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="wrap"&gt;
+        &lt;header&gt;&lt;/header&gt;
+        &lt;aside&gt;&lt;/aside&gt;
+        &lt;section&gt;&lt;/section&gt;
+        &lt;footer&gt;&lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    <div class="code-preview">
+        <h2>Code example - CSS</h2>
+<pre class="css"><code>* {margin: 0; padding: 0;}
+body {background-color: #f3e5f5;}
+#wrap {width: 1200px; height: 900px; margin: 0 auto;}
+header {width: 1200px; height: 150px; background: #9575cd;}
+aside {float: left; width: 400px; height: 700px; background: #7e57c2;}
+section {float: left; width: 800px; height: 700px; background: #673ab7;}
+footer {clear: both; width: 1200px; height: 150px; background: #5e35b1;}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1200px){
+    #wrap {width: 95%;}
+    header {width: 100%;}
+    aside {width: 30%;}
+    section {width: 70%;}
+    footer {width: 100%;}
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    #wrap {width: 100%;}
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+    #wrap {width: 100%;}
+    header {height: 300px;}
+    aside {float: none; width: 100%; height: 300px;}
+    section {float: none; width: 100%; height: 300px;}
+}</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    
+</div>
+<!-- //demo-info -->

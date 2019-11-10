@@ -1,0 +1,92 @@
+<div class="info-output">
+
+    <h1>02. 반응형 웹 사이트 만들기(2019) - 미디어 쿼리</h1>
+    <p>반응형 웹 사이트를 만들기 위한 레이아웃 연습입니다. HTML5 시멘트 태그를 사용하여 만듭니다. 반응형 사이트 역시 레이아웃을 연습해야 합니다.</p>
+
+    <div class="code-reference"> 
+        <h2>Code Reference</h2>
+        <p class="bubble warning">소스는 여기서 다운 받을 수 있습니다. <a class="color-values" target="_blank" href="https://github.com/webstoryboy/responsive2019">바로가기</a></p>
+        <p class="bubble warning">완성된 예제는 여기서 확인 할 수 있습니다. <a class="color-values" target="_blank" href="https://webstoryboy.github.io/responsive2019/res205_02.html">바로가기</a></p>
+    </div>
+    
+    <div class="code-preview">
+    <h2>Code example - Html</h2>
+<pre class="xml"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;미디어쿼리&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;미디어쿼리(MediaQuery)&lt;/h1&gt;
+    &lt;p&gt;미디어 쿼리는 화면 크기에 따른 각각의 속성 값을 지정하여, 여러가지 화면을 구성하는 기술입니다.&lt;/p&gt;
+    &lt;p&gt;@media only all and (조건문) {실행문}&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;@media : 미디어 쿼리가 시작됨을 표시합니다.&lt;/li&gt;
+        &lt;li&gt;only :  미디어 쿼리 구문을 해석하라는 명령어입니다.(생략가능)&lt;/li&gt;
+        &lt;li&gt;all : 미디어 쿼리를 해석해야 할 대상을 나타냅니다.(생략가능)
+            &lt;ul&gt;
+                &lt;li&gt;all : 모든 미디어 유형에서 사용할 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;print : 인쇄 장치에서 사용할 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;screen : 컴퓨터 스크린에서 사용할 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;aural : 화면을 읽어 소리로 출력해주는 장치에서 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;tv : TV에서 사용할 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;handheld : 손에 들고 다니는 장치를 사용할 CSS를 정의합니다.&lt;/li&gt;
+                &lt;li&gt;projection : 프로젝트를 위한 사용할 CSS를 정의합니다.&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;and : 앞과 두의 조건을 나타냅니다.(생략가능)&lt;/li&gt;
+        &lt;li&gt;(조건문) : 해당 조건을 설정 할 수 있습니다.&lt;/li&gt;
+        &lt;li&gt;(실행문) : 조건에 따른 실행을 설정합니다.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    <div class="code-preview">
+        <h2>Code example - CSS</h2>
+<pre class="css"><code>body {background: #b71c1c; color: #fff;}
+h1::before {content: '1. '}
+h1::after {content: ' - 기본'}
+
+/* 화면 너비가 0 ~ 1280px : 데스크탑 ; */
+@media (max-width: 1280px){
+    body {background: #880e4f;}
+    h1::before {content: '2. '}
+    h1::after {content: ' - 1025px ~ 1280px'}
+}
+
+/* 화면 너비가 0 ~ 1024px : 노트북 */
+@media (max-width: 1024px){
+    body {background: #4a148c;}
+    h1::before {content: '3. '}
+    h1::after {content: ' - 961px ~ 1024px'}
+}
+
+/* 화면 너비가 0 ~ 960px : 노트북 */
+@media (max-width: 960px){
+    body {background: #311b92;}
+    h1::before {content: '4. '}
+    h1::after {content: ' - 769px ~ 960px'}
+}
+
+/* 화면 너비가 0 ~ 768 : 타블렛 */
+@media (max-width: 768px){
+    body {background: #4a148c;}
+    h1::before {content: '5. '}
+    h1::after {content: ' - 577px ~ 768px'}
+}
+
+/* 화면 너비가 0 ~ 576 : 모바일 */
+@media (max-width: 576px){
+    body {background: #004D40;}
+    h1::before {content: '6. '}
+    h1::after {content: ' - 0px ~ 576px'}
+}</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    
+</div>
+<!-- //demo-info -->

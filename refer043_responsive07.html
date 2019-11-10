@@ -1,0 +1,106 @@
+<div class="info-output">
+
+    <h1>07. 반응형 웹 사이트 만들기(2019) - 반응형 레이아웃 유형5</h1>
+    <p>반응형 웹 사이트를 만들기 위한 레이아웃 연습입니다. HTML5 시멘트 태그를 사용하여 만듭니다. 반응형 사이트 역시 레이아웃을 연습해야 합니다.</p>
+
+    <div class="code-reference"> 
+        <h2>Code Reference</h2>
+        <p class="bubble warning">소스는 여기서 다운 받을 수 있습니다. <a class="color-values" target="_blank" href="https://github.com/webstoryboy/responsive2019">바로가기</a></p>
+        <p class="bubble warning">완성된 예제는 여기서 확인 할 수 있습니다. <a class="color-values" target="_blank" href="https://webstoryboy.github.io/responsive2019/res210_07.html">바로가기</a></p>
+    </div>
+    
+    <div class="code-preview">
+    <h2>Code example - HTML</h2>
+<pre class="xml"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Layout&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="wrap"&gt;
+        &lt;header id="header"&gt;&lt;/header&gt;
+        &lt;section id="banner"&gt;&lt;/section&gt;
+        &lt;section id="content1"&gt;
+            &lt;nav class="nav"&gt;&lt;/nav&gt;
+            &lt;article class="article_right1"&gt;&lt;/article&gt;
+            &lt;article class="article_right2"&gt;&lt;/article&gt;
+        &lt;/section&gt;
+        &lt;section id="content2"&gt;
+            &lt;article class="article_box1"&gt;&lt;/article&gt;
+            &lt;article class="article_box2"&gt;&lt;/article&gt;
+            &lt;article class="article_box3"&gt;&lt;/article&gt;
+        &lt;/section&gt;
+        &lt;section id="content3"&gt;
+            &lt;article class="article_square1"&gt;&lt;/article&gt;
+            &lt;article class="article_square2"&gt;&lt;/article&gt;
+            &lt;article class="article_square3"&gt;&lt;/article&gt;
+            &lt;article class="article_square4"&gt;&lt;/article&gt;
+        &lt;/section&gt;
+        &lt;footer id="footer"&gt;&lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    <div class="code-preview">
+        <h2>Code example - CSS</h2>
+<pre class="css"><code>* {margin: 0; padding: 0;}
+body {background-color: #e3f2fd;}
+
+#wrap{width: 1200px; margin: 0 auto;}
+#header {width: 100%; height: 100px; background-color: #b2defe;}
+#banner {width: 100%; height: 400px; background-color: #7ecbfd;}
+#content1 {width: 100%; overflow: hidden;}
+#content1 .nav {float: left; width: 30%; height: 500px; background-color: #43b5fc;}
+#content1 .article_right1 {float: left; width: 70%; height: 250px; background-color: #00a5fb;}
+#content1 .article_right2 {float: left; width: 70%; height: 250px; background-color: #0096fa;}
+
+#content2 {overflow: hidden;}
+#content2 .article_box1 {float: left; width: 33.3333%; height: 300px; background-color: #0088ec;}
+#content2 .article_box2 {float: left; width: 33.3333%; height: 300px; background-color: #0076d9;}
+#content2 .article_box3 {float: left; width: 33.3333%; height: 300px; background-color: #0064c6;}
+
+#content3 {overflow: hidden; padding: 5%; background-color: #00a6fc;}
+#content3 .article_square1 {float: left; width: 23%; margin: 1%; height: 200px; border-radius: 5%; background-color: #0076d9;}
+#content3 .article_square2 {float: left; width: 23%; margin: 1%; height: 200px; border-radius: 5%; background-color: #0076d9;}
+#content3 .article_square3 {float: left; width: 23%; margin: 1%; height: 200px; border-radius: 5%; background-color: #0076d9;}
+#content3 .article_square4 {float: left; width: 23%; margin: 1%; height: 200px; border-radius: 5%; background-color: #0076d9;}
+#footer {width: 100%; height: 100px; background-color: #43b5fc;}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px){
+    #wrap {width: 100%;}
+    #content2 .article_box1 {width: 50%;}
+    #content2 .article_box2 {width: 50%;}
+    #content2 .article_box3 {display:none}
+    
+    #content3 .article_square1 {width: 31.333%;}
+    #content3 .article_square2 {width: 31.333%;}
+    #content3 .article_square3 {width: 31.333%;}
+    #content3 .article_square4 {display: none;}
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    #content2 .article_box1 {width: 100%;}
+    #content2 .article_box2 {width: 100%;}
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+    #content1 .nav {width: 100%; height: 200px;}
+    #content1 .article_right1 {width: 100%; height: 200px;}
+    #content1 .article_right2 {width: 100%; height: 200px;}
+    
+    #content3 .article_square1 {width: 98%; border-radius: 5px;}
+    #content3 .article_square2 {width: 98%; border-radius: 5px;}
+    #content3 .article_square3 {width: 98%; border-radius: 5px;}
+}</code></pre>
+    </div>
+    <!-- //code-preview -->
+
+    
+</div>
+<!-- //demo-info -->
